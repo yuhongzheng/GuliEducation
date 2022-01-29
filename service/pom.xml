@@ -14,6 +14,11 @@
     <modules>
         <module>service_edu</module>
         <module>service_oss</module>
+        <module>service_vod</module>
+        <module>service_cms</module>
+        <module>service_sms</module>
+        <module>service_ucenter</module>
+        <module>service_order</module>
     </modules>
 
     <dependencies>
@@ -142,5 +147,15 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
     </build>
 </project>

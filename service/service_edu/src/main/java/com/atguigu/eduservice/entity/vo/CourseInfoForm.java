@@ -34,4 +34,7 @@ public class CourseInfoForm implements Serializable {
 
     @ApiModelProperty(value = "课程简介")
     private String description;
+
+    @ApiModelProperty(value = "课程状态")
+    private String status;
 }
